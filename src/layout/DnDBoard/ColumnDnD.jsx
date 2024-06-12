@@ -95,50 +95,53 @@ const ColumnDnD = ({ lstTask }) => {
 
   return (
     <div>
-      <DragDropContext onDragEnd={onDragEnd}>
+      <DragDropContext onDragEnd={onDragEnd} >
         <div className="flex flex-wrap mt-5 justify-center">
           {columns?.map((status) => (
-            <div key={status.statusId} className="columnDnD">
-              <div className="titleTask">
-                <h4 className="titleStatus">{status.statusName}</h4>
-              </div>
-              <Droppable
-                key={status.statusId}
-                droppableId={String(status.statusId)}
-              >
-                {(provided) => (
-                  <div
-                    ref={provided.innerRef}
-                    {...provided.droppableProps}
-                    className="statusBg"
-                  >
-                    <div className="itemLstTask">
-                      {status.lstTaskDeTail.map((task, index) => (
-                        <Draggable
-                          key={task.taskId}
-                          draggableId={String(task.taskId)}
-                          index={index}
-                        >
-                          {(provided) => (
-                            <div
-                              ref={provided.innerRef}
-                              {...provided.draggableProps}
-                              {...provided.dragHandleProps}
-                            >
-                              <ItemTask
-                                task={task}
-                                projectId={projectId}
-                                tokenAccess={user.accessToken}
-                              />
-                            </div>
-                          )}
-                        </Draggable>
-                      ))}
+            <div className=" mb-5">
+              <div key={status.statusId} className="columnDnD">
+                <div className="titleTask">
+                  <h4 className="titleStatus">{status.statusName}</h4>
+                </div>
+                <Droppable
+                  key={status.statusId}
+                  droppableId={String(status.statusId)}
+                >
+                  {(provided) => (
+                    <div
+                      ref={provided.innerRef}
+                      {...provided.droppableProps}
+                      className="statusBg"
+                    >
+                      <div className="itemLstTask">
+                        {status.lstTaskDeTail.map((task, index) => (
+                          <Draggable
+                            key={task.taskId}
+                            draggableId={String(task.taskId)}
+                            index={index}
+                          >
+                            {(provided) => (
+                              <div
+                                ref={provided.innerRef}
+                                {...provided.draggableProps}
+                                {...provided.dragHandleProps}
+                              >
+                                <ItemTask
+                                  task={task}
+                                  projectId={projectId}
+                                  tokenAccess={user.accessToken}
+                                />
+                              </div>
+                            )}
+                          </Draggable>
+                        ))}
+                      </div>
+                      {provided.placeholder}
                     </div>
-                    {provided.placeholder}
-                  </div>
-                )}
-              </Droppable>
+                  )}
+                </Droppable>
+              </div>
+
             </div>
           ))}
         </div>
