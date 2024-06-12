@@ -471,7 +471,7 @@ const TaskDetail = ({ projectDetail }) => {
                       )}
                     </div>
                   </div>
-                ))}
+                )).reverse()}
               </div>
             </div>
           </div>
