@@ -288,7 +288,6 @@ const TaskDetail = ({ projectDetail }) => {
         console.log(err);
       });
   };
-  console.log(taskDetail);
 
   return (
     <div>

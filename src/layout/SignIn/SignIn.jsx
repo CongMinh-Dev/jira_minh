@@ -21,7 +21,6 @@ const SignIn = () => {
       onSubmit: async (values) => {
         try {
           const res = await quanLyTaiKhoanServ.dangNhap(values);
-          console.log(res);
           saveLocalStorage("user", res.data.content);
           const info = () => {
             message.success(
@@ -36,7 +35,6 @@ const SignIn = () => {
           }, 1000);
           // thÔng báo đăng nhập thành công
         } catch (error) {
-          console.log(error);
           message.error("Incorrect username or password. Please try again.")
         }
       },

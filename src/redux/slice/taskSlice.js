@@ -209,7 +209,6 @@ const taskSlice = createSlice({
       })
       // update task
       .addCase(updateTaskThunk.fulfilled, (state, action) => {
-        console.log(action)
         setTimeout(message.success("update complete"), 2000);
       })
       .addCase(updateTaskThunk.rejected, (state, action) => {

@@ -5,7 +5,6 @@ import HomePage from "../Pages/Home/HomePage";
 import ToggleSignIn from "../Pages/ToggleSignIn/ToggleSignIn";
 import CreateProject from "../Pages/CreateProject/CreateProject";
 import ProfileUser from "../Pages/ProfileUser/ProfileUser";
-// import Board from "../Pages/Board/Board";
 import ProjectBoardDetail from "../Pages/Board/ProjectBoardDetail";
 import UserManagerment from "../Pages/UserManagerment/UserManagerment";
 import { getLocalStorage } from "../utils/util";
