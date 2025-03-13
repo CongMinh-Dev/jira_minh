@@ -14,7 +14,7 @@ import {
 const ProjectBoardDetail = () => {
   const dispatch = useDispatch();
   const { projectId } = useParams();
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
 
   const projectDetail = useSelector(
     (state) => state.projectSlice.projectDetail

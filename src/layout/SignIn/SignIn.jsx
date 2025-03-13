@@ -21,7 +21,7 @@ const SignIn = () => {
       onSubmit: async (values) => {
         try {
           const res = await quanLyTaiKhoanServ.dangNhap(values);
-          saveLocalStorage("user", res.data.content);
+          saveLocalStorage("userJira0967005146", res.data.content);
           const info = () => {
             message.success(
               <p className="thongBao">

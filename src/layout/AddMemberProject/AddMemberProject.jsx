@@ -13,7 +13,7 @@ const AddMemberProject = ({ newProject, onCloseAddMember }) => {
   const dispatch = useDispatch();
 
   console.log(newProject);
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   const [users, setUsers] = useState([]);
   const [searchMember, setSearchMember] = useState("");
   const [addMember, setAddMember] = useState([]);

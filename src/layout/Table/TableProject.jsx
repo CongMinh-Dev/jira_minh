@@ -20,7 +20,7 @@ import {
 
 const TableProject = () => {
   const dispatch = useDispatch();
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   const { isMobile } = useResponsive();
   const navigate = useNavigate();
 

@@ -12,7 +12,7 @@ import "./projectOfUser.scss";
 import ProjectDetail from "../projectDetail/ProjectDetail";
 
 const ProjectOfUser = () => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   // console.log(user.accessToken);
   const dispatch = useDispatch();
 

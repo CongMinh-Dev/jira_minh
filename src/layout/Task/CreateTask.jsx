@@ -19,7 +19,7 @@ import "./createTask.scss";
 import { getProjectDetailThunk } from "../../redux/slice/projectSlice";
 
 const CreateTask = () => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   // console.log(user.accessToken);
 
   const [assignMember, setAsssignMember] = useState([]);

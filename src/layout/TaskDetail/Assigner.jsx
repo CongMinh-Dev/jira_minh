@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { getTaskDetailThunk } from "../../redux/slice/taskSlice";
 
 const Assigner = () => {
-  const userToken = getLocalStorage("user").accessToken;
+  const userToken = getLocalStorage("userJira0967005146").accessToken;
   const dispatch = useDispatch();
 
   const taskDetail = useSelector((state) => state.taskSlice.taskDetail);

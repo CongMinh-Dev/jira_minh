@@ -1,0 +1,114 @@
+@keyframes xuathien {
+  from {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.searchInput {
+  background-color: #2684ff;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 12px;
+}
+.searchInput .formSearch {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 0;
+  transition: all 0.5s;
+}
+.searchInput .formSearch:focus {
+  margin-left: 10px;
+  width: 250px;
+}
+
+.createProject {
+  background: #2684ff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+}
+
+.tableData {
+  height: 550px;
+  overflow-y: auto;
+}
+.tableData::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgba(65, 143, 245, 0.2549019608);
+}
+.tableData::-webkit-scrollbar-thumb {
+  background-color: #f1e5ab;
+}
+
+.columnName {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.headTable {
+  background-color: #2684ff;
+  color: white;
+  position: sticky;
+  z-index: 11;
+  top: 0;
+  overflow: hidden;
+  height: 30px;
+}
+
+.rowOfTable {
+  border-radius: 20px;
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.rowOfTable:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.rowOfTable th {
+  height: 40px;
+}
+
+.custom-avatar-group {
+  position: relative;
+  z-index: 10;
+}
+
+.mobileProject {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cardProject {
+  width: 300px;
+  height: 220px;
+  margin: 15px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(33, 125, 248) 0px 0px 0px 3px;
+}
+
+.nameCard {
+  margin-right: 5px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.contentCard {
+  font-size: 18px;
+  text-align: right;
+}
+
+.custom-avatar-group-mobie {
+  transform: translateY(35%);
+}
+
+.btnGroup {
+  font-size: 18px;
+  margin: 0 5px;
+}/*# sourceMappingURL=tableData.css.map */

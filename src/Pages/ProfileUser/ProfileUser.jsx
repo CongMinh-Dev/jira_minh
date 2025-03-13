@@ -7,7 +7,7 @@ import ProjectOfUser from "../../layout/EditProfile/ProjectOfUser";
 import "./profileUser.scss";
 
 const ProfileUser = () => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   // console.log(user);
   const { handleChange, handleBlur, touched, values, handleSubmit } = useFormik(
     {
@@ -38,7 +38,7 @@ const ProfileUser = () => {
               phoneNumber: values.phoneNumber,
               email: values.email,
             };
-            localStorage.setItem("user", JSON.stringify(updatedUsers));
+            localStorage.setItem("userJira0967005146", JSON.stringify(updatedUsers));
           })
           .catch((err) => {
             console.log(err);

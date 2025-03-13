@@ -38,8 +38,8 @@ import axios from "axios";
 import InputCustom from "../../Components/Input/InputCustom";
 
 const TaskDetail = ({ projectDetail }) => {
-  const userAvatar = getLocalStorage("user");
-  const userToken = getLocalStorage("user").accessToken;
+  const userAvatar = getLocalStorage("userJira0967005146");
+  const userToken = getLocalStorage("userJira0967005146").accessToken;
   const dispatch = useDispatch();
 
   // data

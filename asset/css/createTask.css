@@ -1,0 +1,80 @@
+.taskContent {
+  display: flex;
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .taskContent {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575.99px) {
+  .taskContent {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .taskContent {
+    flex-direction: column;
+  }
+}
+
+.ql-editor {
+  min-height: 200px;
+}
+
+.taskItemContent {
+  width: 50%;
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .taskItemContent {
+    width: 100%;
+  }
+}
+@media (max-width: 575.99px) {
+  .taskItemContent {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .taskItemContent {
+    width: 100%;
+  }
+}
+.taskItemContent:first-child {
+  padding: 0 20px 0 0;
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .taskItemContent:first-child {
+    padding: 0;
+  }
+}
+@media (max-width: 575.99px) {
+  .taskItemContent:first-child {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .taskItemContent:first-child {
+    padding: 0;
+  }
+}
+.taskItemContent:last-child {
+  padding: 0 0 0 20px;
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .taskItemContent:last-child {
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 575.99px) {
+  .taskItemContent:last-child {
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .taskItemContent:last-child {
+    padding: 0;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=createTask.css.map */

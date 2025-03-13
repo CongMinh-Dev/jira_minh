@@ -9,9 +9,9 @@ import { handleOpenCreateTask } from "../../redux/slice/taskSlice";
 const SiderMenu = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   const logOut = () => {
-    localStorage.removeItem("user");
+    localStorage.removeItem("userJira0967005146");
     navigate("/Toggle-sign-in");
   };
   const onOpen = () => {

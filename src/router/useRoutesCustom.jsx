@@ -10,7 +10,7 @@ import UserManagerment from "../Pages/UserManagerment/UserManagerment";
 import { getLocalStorage } from "../utils/util";
 
 const useRoutesCustom = () => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   const routes = useRoutes([
     {
       path: "/",

@@ -8,7 +8,7 @@ import { getLocalStorage } from "../../utils/util";
 // import Quill from "quill";
 
 const CreateProject = () => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   //danh sách category
   const [addMember, setAddMember] = useState(false); //
   const [category, setCategory] = useState([]); // giá trị category

@@ -11,7 +11,7 @@ import { Avatar, Divider, Drawer, Tooltip } from "antd";
 import { handleOpenCreateTask } from "../../redux/slice/taskSlice";
 
 const Header = () => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   const { isMobile } = useResponsive();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Header = () => {
     dispatch(handleOpenCreateTask());
   };
   const logOut = () => {
-    localStorage.removeItem("user");
+    localStorage.removeItem("userJira0967005146");
     navigate("/Toggle-sign-in");
   };
   // console.log(user)

@@ -12,7 +12,7 @@ import "./columnDnD.scss";
 import { handleChangeColumn } from "../../redux/slice/taskSlice";
 
 const ColumnDnD = ({ lstTask }) => {
-  const user = getLocalStorage("user");
+  const user = getLocalStorage("userJira0967005146");
   const { projectId } = useParams();
   const dispatch = useDispatch();
   const columns = useSelector((state) => state.taskSlice.column);

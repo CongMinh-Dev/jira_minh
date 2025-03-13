@@ -1,0 +1,82 @@
+@keyframes xuathien {
+  from {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.inputProjectName {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: box-shadow ease-in-out 0.2s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.inputProjectName:focus {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.createPJForm .ql-toolbar {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: box-shadow ease-in-out 0.2s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  text-align: center;
+}
+.createPJForm .ql-toolbar:focus {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.createPJForm .ql-container {
+  padding-top: 10px;
+  border: none;
+  outline: none;
+}
+.createPJForm .ql-container .ql-editor {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: box-shadow ease-in-out 0.2s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  min-height: 250px;
+}
+.createPJForm .ql-container .ql-editor:focus {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ant-select-selector {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: box-shadow ease-in-out 0.2s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.ant-select-selector:focus {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ant-select-dropdown {
+  border: none;
+  outline: none;
+  transition: box-shadow ease-in-out 0.2s;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.btnCreatefnt {
+  margin-right: 5px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+.resultSuccess {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}/*# sourceMappingURL=createProject.css.map */

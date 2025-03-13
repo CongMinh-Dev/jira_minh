@@ -1,0 +1,43 @@
+.columnDnD {
+  height: auto;
+  width: 360px;
+  margin-right: 20px;
+  padding: 10px 20px 30px 20px;
+  border-radius: 20px;
+  background-color: rgb(158, 158, 158);
+  transition: height 2s ease-in-out;
+}
+@media (min-width: 992px) and (max-width: 1279.99px) {
+  .columnDnD {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .columnDnD {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .columnDnD {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575.99px) {
+  .columnDnD {
+    margin-bottom: 20px;
+  }
+}
+
+.titleTask .titleStatus {
+  margin: 10px 10px 0 0;
+  color: white;
+  font-weight: 500;
+}
+
+.statusBg {
+  transition: height 0.5s ease-in-out;
+}
+
+.titleStatus {
+  color: black;
+}/*# sourceMappingURL=columnDnD.css.map */

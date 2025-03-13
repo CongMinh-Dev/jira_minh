@@ -18,7 +18,7 @@ import useResponsive from '../../hooks/useResponsive';
 
 const UserManagerment = () => {
     let disPatch = useDispatch()
-    let { accessToken } = getLocalStorage("user")
+    let { accessToken } = getLocalStorage("userJira0967005146")
     let [isReload, setIsReload] = useState(false)
     const { isMobile } = useResponsive();
     useEffect((params) => {
